@@ -1,47 +1,42 @@
-/* Fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap');
-
-/* Estilos generales */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F9E7E7;
+/* Animaciones */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-/* Encabezado */
-header {
-    background-color: #E57373;
-    color: white;
-    padding: 20px;
-    text-align: center;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-header h1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
-    margin: 0;
+header h1, section h2 {
+    animation: fadeInLeft 1s ease-out;
 }
 
-/* Contenido principal */
-main {
-    padding: 20px;
+section p {
+    opacity: 0;
+    animation: fadeIn 2s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
 }
 
-section {
-    margin-bottom: 30px;
-}
-
-section h2 {
+section p:hover {
     color: #E57373;
-    font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
+    transform: scale(1.05);
+    transition: color 0.3s, transform 0.3s;
 }
 
-/* Pie de página */
-footer {
-    background-color: #E57373;
-    color: white;
-    padding: 10px;
-    text-align: center;
+/* Asegúrate de que la animación se ejecute una vez cuando la página cargue */
+body {
+    animation: fadeIn 0.5s ease-out;
 }

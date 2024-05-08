@@ -119,13 +119,13 @@ body {
 }
 
 body {
-    animation: colorRotate 10s ease-in-out infinite;
+    animation: colorRotate 1s ease-in-out infinite;
 }
 
 header h1, section h2 {
-    animation: pulse 3s ease-in-out infinite;
+    animation: pulse 1s ease-in-out infinite;
 }
 
 section {
-    animation: float 6s ease-in-out infinite;
+    animation: float 1s ease-in-out infinite;
 }

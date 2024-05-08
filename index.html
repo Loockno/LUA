@@ -13,10 +13,25 @@
         <section>
             <h2>Un tributo a las madres</h2>
             <p>Las madres son seres excepcionales que nos brindan amor incondicional, cuidado y apoyo en cada etapa de nuestras vidas. Son nuestras primeras maestras, nuestras confidentes y nuestras mejores amigas.</p>
+            <img src="madre-amor.jpg" alt="Amor de madre">
         </section>
         <section>
             <h2>Un regalo especial</h2>
             <p>En este día tan especial, queremos honrar a todas las madres regalándoles un momento de paz y tranquilidad. Tómense un tiempo para relajarse y disfrutar de su compañía.</p>
+        </section>
+        <section>
+            <h2>Recuerdos inolvidables</h2>
+            <p>Comparte tus recuerdos favoritos con tu madre en nuestra galería de fotos online. ¡Celebra la vida y los momentos juntos!</p>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="photo" accept="image/*">
+                <button type="submit">Subir Foto</button>
+            </form>
+        </section>
+        <section>
+            <h2>Mensajes para mamá</h2>
+            <p>Deja un mensaje cariñoso para tu madre que todos puedan ver y compartir. Exprésale tu amor y gratitud.</p>
+            <textarea placeholder="Escribe tu mensaje aquí..."></textarea>
+            <button onclick="alert('Mensaje enviado con éxito!')">Enviar Mensaje</button>
         </section>
     </main>
     <footer>

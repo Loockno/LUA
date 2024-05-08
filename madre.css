@@ -1,3 +1,50 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9E7E7;
+}
+
+/* Encabezado */
+header {
+    background-color: #E57373;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #E57373;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+
+/* Pie de página */
+footer {
+    background-color: #E57373;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
 /* Animaciones */
 @keyframes fadeInLeft {
     from {
